@@ -1,0 +1,313 @@
+@import url('http://fonts.googleapis.com/css?family=Rubik');
+
+/* Global Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-family */
+    --body: Rubik;
+    
+    /* font-weight */
+    --normal: 400;
+    --bold: 500;
+    
+    /* color */
+    --footer: hsl(231, 69%, 60%);
+    --buttonNav: hsl(0, 94%, 66%);
+    --text: hsl(229, 8%, 60%);
+    --button: hsl(229, 31%, 21%);
+    --White: white;
+    --titles: black;
+
+    
+    --spacing: 25px;
+}
+
+/* Dark mode */
+/* html[data-theme = 'dark'] {
+    
+} */
+
+body {
+    height: fit-content;
+    
+    font-size: 18px;
+    font-family: var(--text), sans-serif;
+}
+
+button {
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: .3rem;
+    font-size: 1rem;
+    font-family: var(--header), sans-serif;
+
+    background-color: var(--button);
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a  {
+    text-decoration: none;
+}
+
+
+
+/* header */
+header {
+    padding: var(--spacing);
+}
+
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* padding-bottom: 20px; */
+}
+
+.navListContainer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--button);
+    opacity: .95;
+    padding: var(--spacing);
+}
+
+.navListContainer .top .head {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+.navListContainer .top .head #close {
+    height: fit-content;
+}
+.navList li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-top: white 1px solid;
+    
+    padding: 15px 0;
+}
+.navList li a {
+    color: white;
+    text-transform: uppercase;
+}
+.navList li button {
+    width: 100%;
+    background: transparent;
+    border: white solid;
+    text-transform: uppercase;
+    font-weight: var(--bold);
+}
+
+.navListContainer .bottom {
+    text-align: center;
+}
+.navListContainer .bottom img:first-child{
+    margin-right: 20px;
+}
+.goat {
+    display: flex;
+}
+
+
+.headerContents {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+.headerContents .img {
+    position: relative;
+    margin-bottom: 20px;
+}
+.headerContents .img::after {
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 230px;
+    background-color: blue;
+    bottom: 0;
+    right: 0;
+    z-index: -999999;
+
+    border-radius: 100% 0 0 100%;
+
+    /* background-image: url('../images/'); */
+}
+.headerContents img {
+    width: 100%;
+    margin: 0 auto;
+    /* z-index: 99; */
+}
+.headerContents .headerText {
+    text-align: center;
+}
+.headerContents .headerText .texts {
+    /* margin-bottom: 15px; */
+    width: 100%;
+    margin: 0 auto 15px;
+}
+.headerContents .headerText h1 {
+    margin-bottom: 15px;
+}
+.headerContents .headerText p {
+    font-size: .9rem;
+    line-height: 23px;
+}
+.headerContents .headerText .btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* main */
+main {
+    padding: var(--spacing);
+}
+main section {
+    text-align: center;
+}
+main section #sectionHeading {
+    margin-bottom: var(--spacing);
+}
+main section #sectionDescription {
+    line-height: 25px;
+}
+main section.featuresContainer .features ul li {
+    border-top: solid 1px;
+}
+main section.featuresContainer .features ul li:last-child {
+    border-bottom: solid 1px;
+}
+main section.featuresContainer .features ul li button {
+    color: var(--titles);
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: var(--bold);
+}
+main section.featuresContainer .feature .img
+img {
+img {
+    width: 100%;
+}
+main section.featuresContainer .feature
+main section.featuresContainer .feature
+main section.featuresContainer .feature
+main section.featuresContainer .feature
+
+main section.downloadContainer .extensionCards {
+    display: flex;
+    flex-direction: column;
+}
+main section.downloadContainer .extensionCards .extensionCard {
+    border: solid;
+    margin-bottom: var(--spacing);
+    border-radius: 20px;
+}
+main section.downloadContainer .extensionCards .cardTop {
+    padding-top: 35px;
+    border-bottom: dashed;
+}
+/* main section.downloadContainer .extensionCards .cardTop .extensionCard {
+    padding: 35px var(--spacing) var(--spacing);
+} */
+main section.downloadContainer .extensionCards .extensionCard .cardTop .cardTexts {
+    margin: 35px 0;
+} 
+main section.downloadContainer .extensionCards .extensionCard .cardTop .cardTexts h3 {
+    margin-bottom: 15px;
+}
+/* main section.downloadContainer .extensionCards .extensionCard .cardTop .cardTexts p {
+    color: ;
+} */
+main section.downloadContainer .extensionCards .extensionCard .cardBottom {
+    padding: var(--spacing);
+}
+main section.downloadContainer .extensionCards .extensionCard button {
+    width: 100%;
+}
+main section.featuresContainer .features
+main section.featuresContainer .features
+main section.featuresContainer .features
+
+/* section */
+
+
+
+/* footer */
+footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+}
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+    /* color: var(--text); */
+    padding: 20px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+
+/* Media Queries - Responsiveness */
+/* LG - Large Screen */
+/* @media only screen and (max-width: 992px) {
+
+} */
+
+/* MD - Medium Screen */
+/* @media only screen and (max-width: 765px) {
+    body {
+        justify-content: initial;
+	height: fit-content;
+    }
+
+    footer .footer-container {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+        row-gap: 15px;
+    }
+
+    .attribution { 
+        font-size: .6rem;
+        padding: 20px 10px;
+        color: white;
+    }
+} */
+
+/* SM - Small Screen */
+/* @media only screen and (max-width: 576px){
+
+} */
+
+
+/* @timiodulate css template */
